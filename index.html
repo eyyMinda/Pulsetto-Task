@@ -6,16 +6,220 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-  <header></header>
-  <main></main>
+  <header class="header" data-site-header>
+    <flex-between class="header__inner">
+      <a class="header__logo-link" href="#" aria-label="Pulsetto x Athletes">
+        <img class="header__logo" srcset="/public/pulsetto-logo.png 400w" sizes="(min-width: 768px) 132px, 98px" loading="eager" decoding="async" alt="Pulsetto" width="400" height="40" style="aspect-ratio: 400 / 40;">
+        <span class="header__logo-extension" aria-hidden="true">x<br>athletes</span>
+      </a>
+
+      <details class="header__nav-dropdown header__nav-dropdown--mobile SMobile_only w-full">
+        <summary class="header__nav-dropdown-trigger" title="Open audience options">Runners</summary>
+        <grid class="header__nav-dropdown-menu" role="list">
+          <a class="header__nav-dropdown-link header__nav-dropdown-link--active" href="#" title="Runners" data-nav-value="Runners">Runners</a>
+          <a class="header__nav-dropdown-link" href="#" title="NBA Players" data-nav-value="NBA Players">NBA Players</a>
+          <a class="header__nav-dropdown-link" href="#" title="Olympycs" data-nav-value="Olympycs">Olympycs</a>
+        </grid>
+      </details>
+
+      <nav class="header__nav SDesktop_only" aria-label="Audience categories">
+        <a class="header__nav-link header__nav-link--active" href="#" title="Runners" data-nav-value="Runners">Runners</a>
+        <a class="header__nav-link" href="#" title="NBA Players" data-nav-value="NBA Players">NBA Players</a>
+        <a class="header__nav-link" href="#" title="Olympycs" data-nav-value="Olympycs">Olympycs</a>
+      </nav>
+    </flex-between>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Pulsetto hero section">
+      <div class="hero__bg" role="presentation"></div>
+
+      <flex class="hero__inner">
+        <flex-col class="hero__content">
+          <h1 class="hero__title section-title">The missing link in <span>runners performance</span></h1>
+
+          <flex class="hero__partnership">
+            <span class="hero__partnership-text">In partnership with:</span>
+            <img class="hero__partner-logo" srcset="/public/runna-logo.png 2002w" sizes="102px" loading="eager" decoding="async" alt="Runna" width="2002" height="629" style="aspect-ratio: 2002 / 629;">
+          </flex>
+        </flex-col>
+      </flex>
+    </section>
+
+    <section class="marquee" aria-label="Running campaign scroller">
+      <div class="marquee__viewport">
+        <div class="marquee__track">
+          <div class="marquee__group">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+          </div>
+
+          <div class="marquee__group" aria-hidden="true">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Pulsetto impact stats">
+      <flex-col class="stats__inner">
+        <flex-col class="stats__heading section-heading w-full">
+          <h2 class="stats__title section-title">The science made simple</h2>
+          <p class="stats__subtitle section-text">Optimize how your body recovers, rests, and resets</p>
+        </flex-col>
+
+        <grid class="stats__cards w-full">
+          <article class="stats__card section-flex">
+            <p class="stats__value" data-stat-target="56">0%</p>
+            <p class="stats__label">Less Depressive Symptoms</p>
+          </article>
+          <article class="stats__card section-flex">
+            <p class="stats__value" data-stat-target="45">0%</p>
+            <p class="stats__label">Reduced Anxiety</p>
+          </article>
+          <article class="stats__card section-flex">
+            <p class="stats__value" data-stat-target="41">0%</p>
+            <p class="stats__label">Improved Sleep Quality</p>
+          </article>
+          <article class="stats__card section-flex">
+            <p class="stats__value" data-stat-target="47">0%</p>
+            <p class="stats__label">Dropped Cortisol Levels</p>
+          </article>
+        </grid>
+
+        <p class="stats__study w-full">Study by UAB Inita, Santaros Clinical Research Center</p>
+        <p class="stats__pill w-full">Pulsetto activates deep recovery pathways that control sleep, stress, and focus</p>
+      </flex-col>
+    </section>
+
+    <section class="reviews" aria-label="Runner reviews">
+      <flex-col class="reviews__inner">
+        <flex-col class="reviews__heading section-heading w-full">
+          <h2 class="reviews__title section-title">Where Top Runners <span>Recover</span></h2>
+          <p class="reviews__intro section-text">Use it after training, on rest days, or before sleep to support faster recovery and deeper reset. <br> The more consistently you use it, the better your body adapts - improving how you recover, sleep, and perform.</p>
+        </flex-col>
+
+        <flex-col class="reviews__content w-full">
+          <div class="reviews__panel reviews__panel--active" data-review-panel="01">
+            <flex-col class="reviews__panel-main w-full">
+              <img class="reviews__media" srcset="/public/Review-author.jpg 1200w" sizes="(min-width: 1024px) 48vw, 100vw" loading="lazy" decoding="async" alt="Francesca Evans wearing Pulsetto device" width="1200" height="1200" style="aspect-ratio: 1 / 1;">
+              <div class="reviews__panel-content">
+                <img class="reviews__quote-mark" srcset="/public/quote.svg 42w" sizes="42px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="42" height="36" style="aspect-ratio: 42 / 36;">
+                <p class="reviews__panel-text">Balancing marathon training with everyday life can put a lot of stress on your body and nervous system. I’ve been using <span>Pulsetto</span> after harder runs to help my body switch out of that ‘go-go-go’ mode and into
+                  recovery.<br> It’s not a magic fix, but alongside good sleep, nutrition and easy runs, it’s another tool that helps me look after my body and keep showing up for training.</p>
+                <p class="reviews__author">Francesca Evans</p>
+              </div>
+            </flex-col>
+          </div>
+
+          <div class="reviews__panel" data-review-panel="02">
+            <flex-col class="reviews__panel-main w-full">
+              <img class="reviews__media" srcset="/public/Review-author.jpg 1200w" sizes="(min-width: 1024px) 48vw, 100vw" loading="lazy" decoding="async" alt="Francesca Evans wearing Pulsetto device" width="1200" height="1200" style="aspect-ratio: 1 / 1;">
+              <div class="reviews__panel-content">
+                <img class="reviews__quote-mark" srcset="/public/quote.svg 42w" sizes="42px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="42" height="36" style="aspect-ratio: 42 / 36;">
+                <p class="reviews__panel-text">Balancing marathon training with everyday life can put a lot of stress on your body and nervous system. I’ve been using <span>Pulsetto</span> after harder runs to help my body switch out of that ‘go-go-go’ mode and into
+                  recovery.</p>
+                <p class="reviews__author">Francesca Evans</p>
+              </div>
+            </flex-col>
+          </div>
+
+          <div class="reviews__panel" data-review-panel="03">
+            <flex-col class="reviews__panel-main w-full">
+              <img class="reviews__media" srcset="/public/Review-author.jpg 1200w" sizes="(min-width: 1024px) 48vw, 100vw" loading="lazy" decoding="async" alt="Francesca Evans wearing Pulsetto device" width="1200" height="1200" style="aspect-ratio: 1 / 1;">
+              <div class="reviews__panel-content">
+                <img class="reviews__quote-mark" srcset="/public/quote.svg 42w" sizes="42px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="42" height="36" style="aspect-ratio: 42 / 36;">
+                <p class="reviews__panel-text">It’s not a magic fix, but alongside good sleep, nutrition and easy runs, it’s another tool that helps me look after my body and keep showing up for training.</p>
+                <p class="reviews__author">Francesca Evans</p>
+              </div>
+            </flex-col>
+          </div>
+
+          <div class="reviews__panel" data-review-panel="04">
+            <flex-col class="reviews__panel-main w-full">
+              <img class="reviews__media" srcset="/public/Review-author.jpg 1200w" sizes="(min-width: 1024px) 48vw, 100vw" loading="lazy" decoding="async" alt="Francesca Evans wearing Pulsetto device" width="1200" height="1200" style="aspect-ratio: 1 / 1;">
+              <div class="reviews__panel-content">
+                <img class="reviews__quote-mark" srcset="/public/quote.svg 42w" sizes="42px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="42" height="36" style="aspect-ratio: 42 / 36;">
+                <p class="reviews__panel-text">Balancing marathon training with everyday life can put a lot of stress on your body and nervous system. I’ve been using <span>Pulsetto</span> after harder runs to help my body switch out of that ‘go-go-go’ mode and into
+                  recovery.<br> It’s not a magic fix, but alongside good sleep, nutrition and easy runs, it’s another tool that helps me look after my body and keep showing up for training.</p>
+                <p class="reviews__author">Francesca Evans</p>
+              </div>
+            </flex-col>
+          </div>
+
+          <div class="reviews__panel" data-review-panel="05">
+            <flex-col class="reviews__panel-main w-full">
+              <img class="reviews__media" srcset="/public/Review-author.jpg 1200w" sizes="(min-width: 1024px) 48vw, 100vw" loading="lazy" decoding="async" alt="Francesca Evans wearing Pulsetto device" width="1200" height="1200" style="aspect-ratio: 1 / 1;">
+              <div class="reviews__panel-content">
+                <img class="reviews__quote-mark" srcset="/public/quote.svg 42w" sizes="42px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="42" height="36" style="aspect-ratio: 42 / 36;">
+                <p class="reviews__panel-text">Balancing marathon training with everyday life can put a lot of stress on your body and nervous system. I’ve been using <span>Pulsetto</span> after harder runs to help my body switch out of that ‘go-go-go’ mode and into
+                  recovery.<br> It’s not a magic fix, but alongside good sleep, nutrition and easy runs, it’s another tool that helps me look after my body and keep showing up for training.</p>
+                <p class="reviews__author">Francesca Evans</p>
+              </div>
+            </flex-col>
+          </div>
+
+          <nav class="reviews__nav w-full" aria-label="Reviews navigation">
+            <button class="reviews__nav-btn reviews__nav-btn--active" type="button" data-review-target="01">01</button>
+            <button class="reviews__nav-btn" type="button" data-review-target="02">02</button>
+            <button class="reviews__nav-btn" type="button" data-review-target="03">03</button>
+            <button class="reviews__nav-btn" type="button" data-review-target="04">04</button>
+            <button class="reviews__nav-btn" type="button" data-review-target="05">05</button>
+          </nav>
+        </flex-col>
+      </flex-col>
+    </section>
+
+    <section class="marquee" aria-label="Running campaign scroller">
+      <div class="marquee__viewport">
+        <div class="marquee__track">
+          <div class="marquee__group">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+          </div>
+
+          <div class="marquee__group" aria-hidden="true">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+            <span class="marquee__item">PREPARE FOR HACKNEY HALF 2026 MARATHON</span>
+            <img class="marquee__separator" srcset="/public/bolt-icon.svg 15w" sizes="15px" loading="lazy" decoding="async" alt="" aria-hidden="true" width="15" height="18" style="aspect-ratio: 15 / 18;">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer></footer>
 
 
-  <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
