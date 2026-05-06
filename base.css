@@ -1,0 +1,212 @@
+/* ================ Fonts ================ */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* ================ Variables ================ */
+:root {
+  --color-bg: #04181e;
+  --color-text: #ffffff;
+  --color-accent: #00ff9e;
+  --color-accent-transparent: #00d28233;
+  --color-accent-full-transparent: #00d28212;
+
+  --header-height: 68px;
+  --page-max: 1440px;
+}
+
+/* ================ Reset ================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img {
+  width: auto;
+  height: auto;
+  vertical-align: bottom;
+}
+*:is(input, button, textarea, select) {
+  font: inherit;
+}
+*:is(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 0;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ========================= Global ========================== */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 160px;
+  }
+}
+main {
+  scroll-margin-top: 160px;
+}
+.hidden {
+  display: none !important;
+}
+.no-space {
+  padding: 0;
+  margin: 0;
+}
+.w-full {
+  width: 100%;
+}
+.w-fit {
+  width: fit-content;
+}
+@media screen and (max-width: 767px) {
+  .w-full-mb {
+    width: 100%;
+  }
+  .w-fit-mb {
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 600px) {
+  .SDesktop_only {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 600px) {
+  .SMobile_only {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Desktop_only {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .Mobile_only {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .LDesktop_only {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .LMobile_only {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .XLDesktop_only {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .XLMobile_only {
+    display: none !important;
+  }
+}
+/* ========================= Custom Section Elements ========================== */
+section {
+  max-width: var(--page-max);
+  display: block;
+  padding: 32px 20px;
+  margin-inline: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-inline: 48px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 64px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-inline: 80px;
+  }
+  @media screen and (max-width: 360px) {
+    padding-inline: 8px;
+  }
+}
+/* Section Flex */
+flex,
+.section-flex {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+/* Grid */
+grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+/* Section Point */
+point {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+point img {
+  flex-shrink: 0;
+  width: 18px;
+}
+point p {
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  margin-block: 0;
+}
+info-box {
+  width: fit-content;
+  border-radius: 4px;
+  background: var(--accent-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.3;
+  padding: 3px 4px;
+}
