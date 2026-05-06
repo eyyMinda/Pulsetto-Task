@@ -4,6 +4,7 @@
 /* ================ Variables ================ */
 :root {
   --color-bg: #04181e;
+  --color-bg-light: #042525;
   --color-text: #ffffff;
   --color-accent: #00ff9e;
   --color-accent-transparent: #00d28233;
@@ -42,11 +43,6 @@ img {
 }
 *:is(p, h1, h2, h3, h4, h5, h6) {
   overflow-wrap: break-word;
-}
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-  padding: 0;
 }
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -128,7 +124,7 @@ main {
   }
 }
 /* ========================= Custom Section Elements ========================== */
-section {
+container {
   max-width: var(--page-max);
   display: block;
   padding: 32px 20px;

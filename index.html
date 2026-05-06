@@ -39,7 +39,7 @@
     <section class="hero" aria-label="Pulsetto hero section">
       <div class="hero__bg" role="presentation"></div>
 
-      <flex class="hero__inner">
+      <container class="hero__inner">
         <flex-col class="hero__content">
           <h1 class="hero__title section-title">The missing link in <span>runners performance</span></h1>
 
@@ -48,7 +48,7 @@
             <img class="hero__partner-logo" srcset="/public/runna-logo.png 2002w" sizes="102px" loading="eager" decoding="async" alt="Runna" width="2002" height="629" style="aspect-ratio: 2002 / 629;">
           </flex>
         </flex-col>
-      </flex>
+      </container>
     </section>
 
     <section class="marquee" aria-label="Running campaign scroller">
@@ -80,7 +80,7 @@
     </section>
 
     <section class="stats" aria-label="Pulsetto impact stats">
-      <flex-col class="stats__inner">
+      <container class="stats__inner">
         <flex-col class="stats__heading section-heading w-full">
           <h2 class="stats__title section-title">The science made simple</h2>
           <p class="stats__subtitle section-text">Optimize how your body recovers, rests, and resets</p>
@@ -107,11 +107,11 @@
 
         <p class="stats__study w-full">Study by UAB Inita, Santaros Clinical Research Center</p>
         <p class="stats__pill w-full">Pulsetto activates deep recovery pathways that control sleep, stress, and focus</p>
-      </flex-col>
+      </container>
     </section>
 
     <section class="reviews" aria-label="Runner reviews">
-      <flex-col class="reviews__inner">
+      <container class="reviews__inner">
         <flex-col class="reviews__heading section-heading w-full">
           <h2 class="reviews__title section-title">Where Top Runners <span>Recover</span></h2>
           <p class="reviews__intro section-text">Use it after training, on rest days, or before sleep to support faster recovery and deeper reset. <br> The more consistently you use it, the better your body adapts - improving how you recover, sleep, and perform.</p>
@@ -185,7 +185,19 @@
             <button class="reviews__nav-btn" type="button" data-review-target="05">05</button>
           </nav>
         </flex-col>
-      </flex-col>
+        </contain>
+    </section>
+
+    <section class="runna-dl" aria-label="Runna promotion">
+      <container class="runna-dl__inner">
+        <flex class="runna-dl__header">
+          <img class="runna-dl__pulsetto-logo" srcset="/public/Pulsetto-logo.png 400w" sizes="(min-width: 768px) 160px, 130px" loading="lazy" decoding="async" alt="Pulsetto" width="400" height="40" style="aspect-ratio: 400 / 40;">
+          <span class="runna-dl__separator" aria-hidden="true">x</span>
+          <img class="runna-dl__runna-logo" srcset="/public/Runna-logo.png 2002w" sizes="(min-width: 768px) 98px, 84px" loading="lazy" decoding="async" alt="Runna" width="2002" height="629" style="aspect-ratio: 2002 / 629;">
+        </flex>
+        <p class="runna-dl__text">Achieve your running goals with personalised plans for everything from a faster 5k to your first marathon. Download Runna now and enjoy your first two weeks FREE!</p>
+        <a class="runna-dl__button" href="#" title="Download Runna">Download Runna <span class="runna-dl__button-arrow" aria-hidden="true">→</span></a>
+      </container>
     </section>
 
     <section class="marquee" aria-label="Running campaign scroller">
@@ -214,6 +226,75 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="routine" aria-label="Pulsetto routine section">
+      <container class="routine__inner">
+        <flex-col class="routine__content w-full">
+          <div class="routine__top w-full">
+            <flex-col class="routine__heading section-heading w-full">
+              <h2 class="routine__title section-title">Pulsetto routine for <span>every runner</span></h2>
+              <p class="routine__intro section-text"><strong>Stay still and relaxed</strong> - read, listen to music, or breathe deeply.</p>
+            </flex-col>
+
+            <div class="routine__specs w-full">
+              <div class="routine__spec-row">
+                <span class="routine__spec-chip">PROGRAM</span>
+                <p class="routine__spec-text">Pain (recovery) or Sleep (night use)</p>
+              </div>
+              <div class="routine__spec-row">
+                <span class="routine__spec-chip">INTENSITY</span>
+                <p class="routine__spec-text">Level 5-9 - a comfortable pulsing</p>
+              </div>
+              <div class="routine__spec-row">
+                <span class="routine__spec-chip">DURATION</span>
+                <p class="routine__spec-text">20-30 minutes</p>
+              </div>
+              <div class="routine__spec-row">
+                <span class="routine__spec-chip">POSITION</span>
+                <p class="routine__spec-text">Both sides of the neck with gel</p>
+              </div>
+              <div class="routine__spec-row">
+                <span class="routine__spec-chip">BEST USED</span>
+                <p class="routine__spec-text">When resting, traveling, stretching, or relaxing</p>
+              </div>
+            </div>
+
+            <img class="routine__image" srcset="/public/Routine-image.png 1200w" sizes="(min-width: 1024px) 38vw, 100vw" loading="lazy" decoding="async" alt="Body anatomy visual used for pulsetto routine guidance" width="1200" height="1600" style="aspect-ratio: 3 / 4;">
+          </div>
+
+          <div class="routine__bottom w-full">
+            <h3 class="routine__sub-title">Combine For Better Results</h3>
+
+            <grid class="routine__combine-grid w-full">
+              <flex-col class="routine__combine-col">
+                <p class="routine__combine-head">Tool</p>
+                <ul class="routine__combine-list" role="list">
+                  <li>Ice bath</li>
+                  <li>Massage</li>
+                  <li>Red light therapy</li>
+                  <li>Breathing / meditation</li>
+                </ul>
+              </flex-col>
+
+              <flex-col class="routine__combine-col">
+                <p class="routine__combine-head">How It Works Together</p>
+                <ul class="routine__combine-list" role="list">
+                  <li>Extends the calm, regenerative phase after cooling.</li>
+                  <li>Deepens relaxation and improves circulation recovery.</li>
+                  <li>Adds neural balance to cellular repair.</li>
+                  <li>Strengthens the mind-body connection and vagal response.</li>
+                </ul>
+              </flex-col>
+            </grid>
+
+            <flex-col class="routine__note w-full">
+              <p class="routine__note-title">Remember</p>
+              <p class="routine__note-text">Consistency builds results - just like training. Use Pulsetto every day when your body is calm, and it will learn to recover faster after every game.</p>
+            </flex-col>
+          </div>
+        </flex-col>
+      </container>
     </section>
   </main>
   <footer></footer>
