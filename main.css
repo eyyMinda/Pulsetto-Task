@@ -513,6 +513,7 @@
   color: var(--color-text);
 
   @media screen and (min-width: 1024px) {
+    max-width: 50%;
     justify-content: center;
   }
 }
